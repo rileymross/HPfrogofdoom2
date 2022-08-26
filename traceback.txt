@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 434, in script
+IOError: Couldn't find file 'medusa.mp3'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\execution.py", line 294, in run
+    node.execute()
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\ast.py", line 1163, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\exports.py", line 1147, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\display\core.py", line 1709, in do_with
+    clear=clear)
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\display\core.py", line 2048, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\display\core.py", line 2323, in interact_core
+    renpy.audio.audio.interact()
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\audio\audio.py", line 913, in interact
+    periodic()
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\audio\audio.py", line 847, in periodic
+    c.periodic()
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\audio\audio.py", line 349, in periodic
+    topf = load(self.file_prefix + topq.filename + self.file_suffix)
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\audio\audio.py", line 83, in load
+    rv = renpy.loader.load(fn)
+  File "C:\Users\rcrmd\Desktop\Frog of Doom 2 REMAKE\HarryPotterandtheFrogofDoomII-win\renpy\loader.py", line 431, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'medusa.mp3'.
+
+Windows-post2008Server-6.2.9200
+Ren'Py 6.17.4.409
+Harry Potter & The Frog of Doom 2 - The Frog Strikes Back! 0.0
